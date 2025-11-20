@@ -42,33 +42,6 @@ This project is built for the **NIYAMR Assignment**.
 
 
 
-# 📁 Project Structure
-
-niyamr-fullstack/
-│
-├── backend/
-│ │── server.js
-│ │── package.json
-│ │── .env.example
-│ ├── routes/
-│ │ └── check.js
-│ ├── services/
-│ │ └── llm.js
-│ └── utils/
-│ └── pdfExtract.js
-│
-└── frontend/
-│── package.json
-├── public/
-│ └── index.html
-└── src/
-│── index.js
-│── App.js
-│── styles.css
-└── components/
-│── RuleForm.js
-└── ResultTable.js
-
 
 ---
 
