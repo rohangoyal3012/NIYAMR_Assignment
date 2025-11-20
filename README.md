@@ -43,15 +43,3 @@ This project is built for the **NIYAMR Assignment**.
 
 
 
----
-
-
-
-
- Start backend
-npm start
-
-
-Backend runs at:
-
-http://localhost:4000
