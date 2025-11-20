@@ -1,16 +1,18 @@
 import pdfParse from "pdf-parse";
 
-export async function extractTextFromPdf(buffer) {
+export const extractPdfText = async (buffer) => {
   const data = await pdfParse(buffer);
 
   const raw = data.text || "";
+
+  // Split by form feed (page break)
   const pages = raw.split(/\f/g).map((t, i) => ({
     page: i + 1,
     text: t.trim(),
   }));
 
+  // Fallback if only one long block
   if (pages.length === 1) {
-    // Fallback if PDF doesn't split pages
     const chunkSize = 2500;
     const result = [];
     for (let i = 0; i < raw.length; i += chunkSize) {
@@ -23,4 +25,4 @@ export async function extractTextFromPdf(buffer) {
   }
 
   return pages;
-}
+};
