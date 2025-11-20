@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import checkRouter from "./routes/check.js";
+import checkRouter from "./routes/rulesCheck.js";
 
 dotenv.config();
 const app = express();

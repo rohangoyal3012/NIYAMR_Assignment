@@ -1,6 +1,6 @@
 import express from "express";
 import { upload } from "../config/multer.config.js";
-import { checkPdfRules } from "../controllers/check.controller.js";
+import { checkPdfRules } from "../controllers/rulesCheck.controller.js";
 
 const router = express.Router();
 

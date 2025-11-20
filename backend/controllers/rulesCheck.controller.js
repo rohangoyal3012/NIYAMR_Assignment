@@ -1,5 +1,5 @@
-import { extractPdfText } from "../services/pdf.service.js";
-import { evaluateRules } from "../services/llm.service.js";
+import { extractPdfText } from "../services/rulesCheckPdf.service.js";
+import { evaluateRules } from "../utils/llm.utils.js";
 
 export const checkPdfRules = async (req, res) => {
   try {
